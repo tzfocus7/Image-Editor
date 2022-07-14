@@ -33,7 +33,7 @@ filterOptions.forEach(option => {
     option.addEventListener("click", () => { //adding click event listener to filter buttons
         document.querySelector(".filter .active").classList.remove("active");
         option.classList.add("active");
-        filterName.innerText = option.innerText; 
+        filterName.innerText = option.innerText;  //sets the filter name to be the option name when each option is clicked
 
         if (option.id == "brightness"){
             filterSlider.max = "200";
